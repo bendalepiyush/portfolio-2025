@@ -16,6 +16,18 @@ export default {
           '"Noto Color Emoji"',
         ],
       },
+      animation: {
+        scroll: "scroll 80s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

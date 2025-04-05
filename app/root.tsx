@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import stylesheet from "./app.css?url";
+import { AnimatePresence } from "framer-motion";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,8 +34,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="bg-[#F1EADE] w-screen overflow-x-hidden">
+        <AnimatePresence>{children}</AnimatePresence>
         <ScrollRestoration />
         <Scripts />
       </body>
