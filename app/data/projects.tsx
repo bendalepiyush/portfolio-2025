@@ -23,7 +23,8 @@ const ProjectsData = [
     image: "",
   },
   {
-    title: "Visix: Corporate Wellness Software for MS Teams",
+    title:
+      "Talent Linker : a Job Search Platform expected to Serve 1M Active Users in the US Market",
     role: "Web App Design",
     stats: [
       {
